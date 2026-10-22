@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0a09">
+  <meta name="description" content="Guía visual de las 9 clases y 9 razas de World of Warcraft: Forever. Ventajas, desventajas, roles, combinaciones y un oráculo aleatorio con filtros de DPS, tanque, healer y multifunción.">
+  <title>Elige tu destino — Clases y razas de WoW: Forever</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-classes.css">
+  <link rel="stylesheet" href="styles-races.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0a09'/%3E%3Cpath d='M16 4l10 6v12l-10 6-10-6V10z' fill='none' stroke='%23c8a96b' stroke-width='1.5'/%3E%3Cpath d='M16 10v12M11 16h10' stroke='%23e8cf96' stroke-width='1.5'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Elige tu destino — inicio">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 2.5l11.5 6.7v13.6L16 29.5 4.5 22.8V9.2L16 2.5z"/>
+          <path d="M16 8l6.3 3.7v8.6L16 24l-6.3-3.7v-8.6L16 8z"/>
+          <path d="M16 12.2v7.6M12.2 16h7.6"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__top">Azeroth</span>
+          <span class="brand__bottom">Forever</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#clases">Clases</a>
+        <a href="#oraculo">El oráculo</a>
+        <a href="#razas">Razas</a>
+        <a href="#matriz">Matriz</a>
+        <a href="#guia">Guía por rol</a>
+        <a href="#datos">Datos</a>
+      </nav>
+
+      <a class="header__cta" href="#oraculo">
+        <svg class="icon" aria-hidden="true"><use href="#i-dice"></use></svg>
+        <span>Tirar el destino</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Abrir menú</span>
+        <svg class="icon icon--open" aria-hidden="true"><use href="#i-menu"></use></svg>
+        <svg class="icon icon--close" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__lines" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+          <path d="M-40 680C180 560 210 210 520 180s330 250 610 170 310-210 390-160"/>
+          <path d="M-60 250C210 390 280 720 610 760s330-280 500-190 300 100 410 40"/>
+          <path d="M780 940C750 650 980 610 1010 380s-80-330 120-450"/>
+          <path d="M120 -40C220 180 470 140 510 340s-60 330 120 500"/>
+          <circle cx="1180" cy="250" r="3"/><circle cx="260" cy="650" r="2.5"/>
+          <circle cx="900" cy="720" r="2"/><circle cx="430" cy="150" r="2"/>
+        </svg>
+      </div>
+      <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--hero">
+            <span class="eyebrow__dot"></span>
+            World of Warcraft: Forever
+            <span class="eyebrow__sep">/</span>
+            Beta 2026
+          </p>
+          <h1 class="hero__title">
+            Elige tu
+            <span class="hero__title-outline">destino</span>
+          </h1>
+          <p class="hero__lead">
+            Nueve clases. Nueve razas. Un nivel 60 que no se acaba nunca.
+            Todo lo que necesitas para elegir tu próxima ficha en <strong>WoW: Forever</strong>,
+            con sus ventajas, sus límites y las combinaciones que antes no existían.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#clases">
+              Explorar las clases
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn--ghost" href="#oraculo">
+              <svg class="icon" aria-hidden="true"><use href="#i-dice"></use></svg>
+              Que decida el azar
+            </a>
+          </div>
+
+          <dl class="hero__stats" aria-label="Datos rápidos">
+            <div><dt>9</dt><dd>Clases</dd></div>
+            <div><dt>9</dt><dd>Razas</dd></div>
+            <div><dt>27</dt><dd>Ramas</dd></div>
+            <div><dt>60</dt><dd>Nivel</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__sigil" aria-label="Constelación de las nueve clases">
+          <div class="orbit" id="hero-orbit">
+            <div class="orbit__ring orbit__ring--outer" aria-hidden="true"></div>
+            <div class="orbit__ring orbit__ring--middle" aria-hidden="true"></div>
+            <div class="orbit__ring orbit__ring--inner" aria-hidden="true"></div>
+            <div class="orbit__ticks" aria-hidden="true"></div>
+            <div class="orbit__core">
+              <span class="orbit__core-label">Nivel máximo</span>
+              <strong>60</strong>
+              <span class="orbit__core-sub">FOREVER</span>
+            </div>
+            <div class="orbit__nodes" id="orbit-nodes"></div>
+          </div>
+          <p class="hero__sigil-hint">
+            <svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg>
+            Pulsa un sigilo para abrir su ficha
+          </p>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#clases" aria-label="Bajar a las clases">
+        <span>Desliza para elegir</span>
+        <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+      </a>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Guerrero</span><i>◆</i><span>Paladín</span><i>◆</i><span>Cazador</span><i>◆</i>
+        <span>Pícaro</span><i>◆</i><span>Sacerdote</span><i>◆</i><span>Chamán</span><i>◆</i>
+        <span>Mago</span><i>◆</i><span>Brujo</span><i>◆</i><span>Druida</span><i>◆</i>
+        <span>Guerrero</span><i>◆</i><span>Paladín</span><i>◆</i><span>Cazador</span><i>◆</i>
+        <span>Pícaro</span><i>◆</i><span>Sacerdote</span><i>◆</i><span>Chamán</span><i>◆</i>
+        <span>Mago</span><i>◆</i><span>Brujo</span><i>◆</i><span>Druida</span><i>◆</i>
+      </div>
+    </div>
+
+    <section class="section section--classes" id="clases">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__lead">
+            <p class="eyebrow"><span class="eyebrow__num">01</span> Las nueve sendas</p>
+            <h2 class="section-title">Nueve clases.<br><em>Cero relleno.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>
+              Las nueve clases de siempre, con sus 27 ramas y los cambios de Forever.
+              Filtra por rol, busca una especialización y abre la ficha para ver
+              ventajas, desventajas y para quién es cada una.
+            </p>
+            <p class="section-head__note">
+              <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+              Dificultad orientativa de 1 a 5. No es una tier list: el balance de beta todavía se mueve.
+            </p>
+          </div>
+        </header>
+
+        <div class="class-toolbar" data-reveal>
+          <div class="filter-pills" id="class-filters" role="group" aria-label="Filtrar clases por rol">
+            <button class="pill is-active" type="button" data-filter="all" aria-pressed="true">
+              Todas <span class="pill__count">9</span>
+            </button>
+            <button class="pill" type="button" data-filter="dps" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-swords"></use></svg>
+              DPS <span class="pill__count">9</span>
+            </button>
+            <button class="pill" type="button" data-filter="tank" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>
+              Tanque <span class="pill__count">3</span>
+            </button>
+            <button class="pill" type="button" data-filter="healer" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-heal"></use></svg>
+              Healer <span class="pill__count">4</span>
+            </button>
+            <button class="pill" type="button" data-filter="hybrid" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg>
+              Multifunción <span class="pill__count">5</span>
+            </button>
+          </div>
+
+          <div class="class-toolbar__right">
+            <label class="search">
+              <span class="sr-only">Buscar clase, especialización o habilidad</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+              <input type="search" id="class-search" placeholder="Buscar clase, spec o estilo…" autocomplete="off">
+            </label>
+            <label class="select-wrap">
+              <span class="sr-only">Ordenar clases</span>
+              <select id="class-sort">
+                <option value="default">Orden del códice</option>
+                <option value="name">Nombre A–Z</option>
+                <option value="easy">Dificultad ↑</option>
+                <option value="hard">Dificultad ↓</option>
+              </select>
+              <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+            </label>
+          </div>
+        </div>
+
+        <div class="results-line" data-reveal>
+          <p><strong id="class-count">9</strong> clases encontradas</p>
+          <button class="link-button" type="button" id="class-clear" hidden>Limpiar filtros</button>
+        </div>
+
+        <div class="class-grid" id="class-grid" aria-live="polite"></div>
+
+        <div class="empty-state" id="class-empty" hidden>
+          <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+          <h3>No hay ninguna clase con ese filtro.</h3>
+          <p>Prueba con otro rol o borra la búsqueda.</p>
+          <button class="btn btn--ghost" type="button" id="class-empty-reset">Ver las nueve clases</button>
+        </div>
+
+        <aside class="role-legend" data-reveal>
+          <div>
+            <span class="role-legend__icon" style="--role-color:#b79ad8">
+              <svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg>
+            </span>
+            <p><strong>Multifunción</strong> = clases que pueden cubrir más de un rol. Los híbridos completos, con tanque, healer y DPS, son <b>Paladín</b> y <b>Druida</b>.</p>
+          </div>
+          <p class="role-legend__note">Toca una tarjeta o pulsa <kbd>Enter</kbd> para abrir la ficha completa.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section oracle" id="oraculo">
+      <div class="oracle__aura" aria-hidden="true"></div>
+      <div class="container">
+        <header class="oracle__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">02</span> El oráculo de Azeroth</p>
+          <h2 class="section-title">Deja que<br><em>Azeroth elija.</em></h2>
+          <p class="oracle__intro">
+            Filtra por el rol que quieres jugar y lanza los dados. Si no quieres pensar,
+            modo sin filtros: las nueve clases entran en el bombo. El oráculo no repite
+            la última clase si hay más de una candidata.
+          </p>
+        </header>
+
+        <div class="oracle__panel" data-reveal>
+          <div class="oracle__controls">
+            <div class="oracle__step">
+              <span class="oracle__step-num">01</span>
+              <div>
+                <h3>Elige el filtro</h3>
+                <p>El resultado solo saldrá de las clases que puedan cumplirlo.</p>
+              </div>
+            </div>
+
+            <div class="filter-pills filter-pills--oracle" id="oracle-filters" role="group" aria-label="Filtrar tirada aleatoria por rol">
+              <button class="pill is-active" type="button" data-oracle-filter="all" aria-pressed="true">
+                Sin filtro <span class="pill__count">9</span>
+              </button>
+              <button class="pill" type="button" data-oracle-filter="dps" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-swords"></use></svg>
+                DPS <span class="pill__count">9</span>
+              </button>
+              <button class="pill" type="button" data-oracle-filter="tank" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>
+                Tanque <span class="pill__count">3</span>
+              </button>
+              <button class="pill" type="button" data-oracle-filter="healer" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-heal"></use></svg>
+                Healer <span class="pill__count">4</span>
+              </button>
+              <button class="pill" type="button" data-oracle-filter="hybrid" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Multifunción <span class="pill__count">5</span>
+              </button>
+            </div>
+
+            <p class="oracle__hint" id="oracle-hint">
+              <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+              <span>Modo sin filtros: cualquier clase y cualquiera de sus roles.</span>
+            </p>
+
+            <div class="oracle__step oracle__step--second">
+              <span class="oracle__step-num">02</span>
+              <div>
+                <h3>Añade el resto de la ficha</h3>
+                <p>Opcional: raza disponible y especialización sugerida.</p>
+              </div>
+            </div>
+
+            <label class="switch">
+              <input type="checkbox" id="oracle-race-toggle">
+              <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+              <span class="switch__text">
+                <strong>Incluir una raza</strong>
+                <small>Se elige entre las que pueden jugar esa clase.</small>
+              </span>
+            </label>
+
+            <div class="oracle__action">
+              <button class="oracle__button" type="button" id="oracle-roll">
+                <span class="oracle__button-ring" aria-hidden="true"></span>
+                <svg class="icon" aria-hidden="true"><use href="#i-dice"></use></svg>
+                <span id="oracle-roll-label">Lanzar el destino</span>
+              </button>
+              <p class="oracle__count"><strong id="oracle-candidates">9</strong> clases candidatas · una sola tirada</p>
+            </div>
+          </div>
+
+          <div class="oracle__stage" id="oracle-stage">
+            <div class="oracle__stage-rings" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <i class="oracle__stage-dot"></i>
+            </div>
+            <div class="oracle__result" id="oracle-result" aria-live="polite" aria-atomic="true">
+              <div class="oracle__idle">
+                <span class="oracle__idle-glyph">?</span>
+                <p class="oracle__idle-title">El oráculo espera</p>
+                <p class="oracle__idle-text">Elige un filtro y pulsa <strong>Lanzar el destino</strong>. La primera tirada siempre sabe a nuevo.</p>
+              </div>
+            </div>
+            <p class="oracle__stage-caption">Una tirada, cero decisiones. Bueno, una: aceptar el resultado.</p>
+          </div>
+        </div>
+
+        <p class="oracle__disclaimer" data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+          Tirada aleatoria de verdad, con <code>crypto.getRandomValues</code>. No hay pesos, tier lists ni “clase favorita” escondida.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--races" id="razas">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__lead">
+            <p class="eyebrow"><span class="eyebrow__num">03</span> Las razas</p>
+            <h2 class="section-title">Nueve razas.<br><em>Dos banderas.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>
+              Ocho razas clásicas y la nueva <b>Skyborne</b>, que elige Alianza u Horda al crearse.
+              Las clásicas tienen dos raciales activos y dos pasivos; Skyborne añade un activo según su camino.
+              Aquí están todos, sus clases y las combinaciones que Forever abre por primera vez.
+            </p>
+            <p class="section-head__note">
+              <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+              Valores de la beta del 15 de octubre. Los raciales también pueden cambiar antes del lanzamiento.
+            </p>
+          </div>
+        </header>
+
+        <div class="new-paths" data-reveal>
+          <div class="new-paths__intro">
+            <span class="new-paths__kicker">Nuevas sendas</span>
+            <p>Seis combinaciones que no existían en Classic, más las que trae Skyborne.</p>
+          </div>
+          <div class="new-paths__list">
+            <button class="combo-pill" type="button" data-race-scroll="humano"><span>Humano</span><strong>+ Cazador</strong><em>Nuevo</em></button>
+            <button class="combo-pill" type="button" data-race-scroll="enano"><span>Enano</span><strong>+ Chamán</strong><em>Nuevo</em></button>
+            <button class="combo-pill" type="button" data-race-scroll="gnomo"><span>Gnomo</span><strong>+ Sacerdote</strong><em>Nuevo</em></button>
+            <button class="combo-pill" type="button" data-race-scroll="orco"><span>Orco</span><strong>+ Mago</strong><em>Nuevo</em></button>
+            <button class="combo-pill" type="button" data-race-scroll="no-muerto"><span>No-muerto</span><strong>+ Paladín</strong><em>Nuevo</em></button>
+            <button class="combo-pill" type="button" data-race-scroll="troll"><span>Troll</span><strong>+ Brujo</strong><em>Nuevo</em></button>
+            <button class="combo-pill combo-pill--sky" type="button" data-race-scroll="skyborne"><span>Skyborne</span><strong>+ 6 clases</strong><em>Nueva raza</em></button>
+          </div>
+        </div>
+
+        <div class="race-toolbar" data-reveal>
+          <div class="filter-pills" id="race-filters" role="group" aria-label="Filtrar razas por facción">
+            <button class="pill is-active" type="button" data-race-filter="all" aria-pressed="true">
+              Todas <span class="pill__count">9</span>
+            </button>
+            <button class="pill" type="button" data-race-filter="alliance" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-alliance"></use></svg>
+              Alianza <span class="pill__count">5</span>
+            </button>
+            <button class="pill" type="button" data-race-filter="horde" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-horde"></use></svg>
+              Horda <span class="pill__count">5</span>
+            </button>
+            <button class="pill" type="button" data-race-filter="skyborne" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg>
+              Skyborne <span class="pill__count">1</span>
+            </button>
+          </div>
+          <p class="race-toolbar__hint">Skyborne aparece en Alianza y Horda porque puede elegir facción.</p>
+        </div>
+
+        <div class="race-grid" id="race-grid" aria-live="polite"></div>
+
+        <p class="section-footnote" data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+          Seis razas tienen dos hechizos raciales exclusivos de Sacerdote. Los verás marcados en su ficha: son una de las mecánicas más infravaloradas de Classic.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--matrix" id="matriz">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__lead">
+            <p class="eyebrow"><span class="eyebrow__num">04</span> La matriz</p>
+            <h2 class="section-title">La tabla<br><em>completa.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>
+              Todas las combinaciones legales en Forever. Las estrellas son nuevas;
+              los guiones son puertas que siguen cerradas. Pulsa una clase para abrir
+              su ficha o una raza para saltar a sus raciales.
+            </p>
+            <div class="matrix-legend">
+              <span><b class="legend-new">★</b> Nueva en Forever</span>
+              <span><b class="legend-yes">✓</b> Clásica</span>
+              <span><b class="legend-no">—</b> No disponible</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="matrix-toolbar" data-reveal>
+          <div class="filter-pills" id="matrix-filters" role="group" aria-label="Filtrar matriz por facción">
+            <button class="pill is-active" type="button" data-matrix-filter="all" aria-pressed="true">Todas <span class="pill__count">10</span></button>
+            <button class="pill" type="button" data-matrix-filter="alliance" aria-pressed="false">Alianza <span class="pill__count">5</span></button>
+            <button class="pill" type="button" data-matrix-filter="horde" aria-pressed="false">Horda <span class="pill__count">5</span></button>
+            <button class="pill" type="button" data-matrix-filter="skyborne" aria-pressed="false">Skyborne <span class="pill__count">2</span></button>
+          </div>
+          <p class="matrix-toolbar__hint">Skyborne se cuenta dos veces: Alta Orden (Alianza) y Windshaper (Horda).</p>
+        </div>
+
+        <div class="matrix-wrap" data-reveal>
+          <table class="matrix" id="class-matrix">
+            <caption class="sr-only">Combinaciones de raza y clase disponibles en World of Warcraft: Forever</caption>
+            <thead id="matrix-head"></thead>
+            <tbody id="matrix-body"></tbody>
+          </table>
+        </div>
+
+        <p class="section-footnote" data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+          La matriz refleja la build de beta de octubre de 2026. Blizzard ha dicho que habrá más combinaciones en futuras actualizaciones, pero no cuáles.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--guide" id="guia">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__lead">
+            <p class="eyebrow"><span class="eyebrow__num">05</span> Elige por rol</p>
+            <h2 class="section-title">¿Tanque, healer,<br><em>DPS o comodín?</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>
+              No empieces por el nombre de la clase. Empieza por lo que quieres hacer
+              en un grupo. Estas son las preguntas que importan, las clases que cubren
+              cada rol y los raciales que más se notan.
+            </p>
+          </div>
+        </header>
+
+        <div class="role-grid">
+          <article class="role-card role-card--tank" data-reveal style="--role-color:#8fb4cf">
+            <div class="role-card__top">
+              <span class="role-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+              <span class="role-card__num">Rol 01</span>
+            </div>
+            <h3>Tanque</h3>
+            <p class="role-card__lead">Aguantas la primera línea, generas amenaza y decides dónde se libra el pull. Si el tanque cae, el plan cae con él.</p>
+            <ul class="role-card__list">
+              <li>Mitigación activa, cooldowns y gestión de amenaza.</li>
+              <li>Posicionamiento: girar al jefe, agrupar adds, no regalar daño en área.</li>
+              <li>Paciencia con el maná y los pulls del healer.</li>
+            </ul>
+            <div class="role-card__classes">
+              <span class="role-card__label">Clases</span>
+              <button class="mini-chip" type="button" data-class-link="warrior">Guerrero</button>
+              <button class="mini-chip" type="button" data-class-link="paladin">Paladín</button>
+              <button class="mini-chip" type="button" data-class-link="druid">Druida</button>
+            </div>
+            <p class="role-card__note"><strong>Raciales que se notan:</strong> Enano (Forma de piedra), Tauren (Resistencia + Pisotón), Orco (Dureza), Skyborne (movilidad).</p>
+          </article>
+
+          <article class="role-card role-card--healer" data-reveal style="--role-color:#74c795">
+            <div class="role-card__top">
+              <span class="role-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-heal"></use></svg></span>
+              <span class="role-card__num">Rol 02</span>
+            </div>
+            <h3>Healer</h3>
+            <p class="role-card__lead">Mantienes vivo al grupo, pero también decides cuándo no curar y cuándo gastar maná. El rol con más responsabilidad y más demanda.</p>
+            <ul class="role-card__list">
+              <li>Rendimiento, eficiencia de maná y gestión de disipaciones.</li>
+              <li>Lectura del daño entrante y prioridades: tanque, foco, raid.</li>
+              <li>Posicionamiento para no comerte el siguiente AoE.</li>
+            </ul>
+            <div class="role-card__classes">
+              <span class="role-card__label">Clases</span>
+              <button class="mini-chip" type="button" data-class-link="paladin">Paladín</button>
+              <button class="mini-chip" type="button" data-class-link="priest">Sacerdote</button>
+              <button class="mini-chip" type="button" data-class-link="shaman">Chamán</button>
+              <button class="mini-chip" type="button" data-class-link="druid">Druida</button>
+            </div>
+            <p class="role-card__note"><strong>Raciales que se notan:</strong> Enano (+2% crit de curación), Tauren (+5% vida), Troll (Berserking), Humano (+5% Espíritu).</p>
+          </article>
+
+          <article class="role-card role-card--dps" data-reveal style="--role-color:#df9567">
+            <div class="role-card__top">
+              <span class="role-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-swords"></use></svg></span>
+              <span class="role-card__num">Rol 03</span>
+            </div>
+            <h3>DPS</h3>
+            <p class="role-card__lead">Das el daño, controlas adds y respetas la amenaza. La diferencia entre un buen DPS y uno excelente suele ser el tiempo de actividad, no el botón más grande.</p>
+            <ul class="role-card__list">
+              <li>Rotación y recursos: no perder casts por moverte mal.</li>
+              <li>Prioridad de objetivos, control y uso de cooldowns.</li>
+              <li>Melé o distancia: cambia por completo tu relación con las mecánicas.</li>
+            </ul>
+            <div class="role-card__classes">
+              <span class="role-card__label">Las 9 clases</span>
+              <button class="mini-chip" type="button" data-class-link="warrior">Guerrero</button>
+              <button class="mini-chip" type="button" data-class-link="paladin">Paladín</button>
+              <button class="mini-chip" type="button" data-class-link="hunter">Cazador</button>
+              <button class="mini-chip" type="button" data-class-link="rogue">Pícaro</button>
+              <button class="mini-chip" type="button" data-class-link="priest">Sacerdote</button>
+              <button class="mini-chip" type="button" data-class-link="shaman">Chamán</button>
+              <button class="mini-chip" type="button" data-class-link="mage">Mago</button>
+              <button class="mini-chip" type="button" data-class-link="warlock">Brujo</button>
+              <button class="mini-chip" type="button" data-class-link="druid">Druida</button>
+            </div>
+            <p class="role-card__note"><strong>Raciales que se notan:</strong> Orco (Furia sangrienta), Troll (Berserking), Humano (Saña), No-muerto (Toque de la tumba).</p>
+          </article>
+
+          <article class="role-card role-card--hybrid" data-reveal style="--role-color:#b79ad8">
+            <div class="role-card__top">
+              <span class="role-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg></span>
+              <span class="role-card__num">Rol 04</span>
+            </div>
+            <h3>Multifunción</h3>
+            <p class="role-card__lead">Cubres más de un rol y el grupo te quiere por eso. El precio es equipo duplicado y una curva de aprendizaje más larga.</p>
+            <ul class="role-card__list">
+              <li>Híbridos completos: <b>Paladín</b> y <b>Druida</b> (tanque, healer y DPS).</li>
+              <li>Dos roles: Guerrero, Sacerdote y Chamán.</li>
+              <li>En Forever los stats de golpe y crítico se unifican y varios buffs vienen de serie: ser híbrido duele menos.</li>
+            </ul>
+            <div class="role-card__classes">
+              <span class="role-card__label">Clases</span>
+              <button class="mini-chip" type="button" data-class-link="paladin">Paladín</button>
+              <button class="mini-chip" type="button" data-class-link="druid">Druida</button>
+              <button class="mini-chip" type="button" data-class-link="priest">Sacerdote</button>
+              <button class="mini-chip" type="button" data-class-link="shaman">Chamán</button>
+              <button class="mini-chip" type="button" data-class-link="warrior">Guerrero</button>
+            </div>
+            <p class="role-card__note"><strong>Raciales que se notan:</strong> Enano (defensa + crit de curación), Tauren (vida + stun), Troll (haste), Skyborne (movilidad).</p>
+          </article>
+        </div>
+
+        <div class="guide-lower">
+          <div class="faq" data-reveal>
+            <div class="faq__head">
+              <p class="eyebrow"><span class="eyebrow__num">+</span> Antes de decidir</p>
+              <h3>Preguntas que quitan dudas.</h3>
+            </div>
+
+            <details class="faq__item" open>
+              <summary>¿Qué es exactamente “multifunción” en esta web?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+              <p>Cualquier clase que pueda cubrir más de uno de los tres roles del grupo: tanque, healer y DPS. En Forever eso incluye a <b>Guerrero</b> (tanque/DPS), <b>Sacerdote</b> (healer/DPS), <b>Chamán</b> (healer/DPS), <b>Paladín</b> y <b>Druida</b> (los tres). En el filtro del oráculo entran las cinco.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Puedo jugar cualquier clase con cualquier raza?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+              <p>No. Forever mantiene las restricciones de raza y clase, aunque añade seis combinaciones nuevas y las seis de Skyborne (cinco por facción). La <a href="#matriz">matriz completa</a> tiene todas las respuestas. Por ejemplo: no hay Tauren pícaro, ni Elfo de la Noche mago, ni Skyborne paladín.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Chamán o brujo pueden tanquear?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+              <p>No como rol oficial. Un chamán con escudo puede aguantar alguna dungeon en beta y la mascota del brujo puede comer golpes, pero ninguno tiene una especialización de tanque ni herramientas de amenaza/mitigación para raid. Blizzard lo ha dicho explícitamente: de momento no.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Hay Bloodlust o Heroism en Forever?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+              <p>No. Forever se queda en el marco de Classic: el chamán no tiene Bloodlust/Heroism. Su valor de grupo está en los tótems (Windfury, Grace of Air, Mana Tide, Tremor…) y en los buffs para toda la raid que añade la beta. Si vienes de retail, es el cambio mental más importante.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Los raciales importan o elijo por estética?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+              <p>Importan, pero no deberían decidir tu clase. Un racial defensivo como Forma de piedra o un +5% de vida se nota; un +2% de crítico es una inclinación, no una condena. Elige la raza que te guste y, si dudas, prioriza utilidad: movimiento, anti-control o supervivencia. En PvP se nota más que en PvE.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Cuál es la clase más fácil para empezar?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+              <p><b>Cazador</b> es la respuesta corta: mascota, distancia y el mejor nivelado en solitario. <b>Guerrero</b> tiene una fantasy muy directa, pero depende de equipo y del healer. <b>Sacerdote</b> es fácil de entender y difícil de dominar: si eliges healer, asumes mucha responsabilidad desde el primer pull. No hay una clase “gratis”.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Los datos de esta web son definitivos?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+              <p>No. Están revisados el 22 de octubre de 2026 sobre la beta 1.60.1.70425 (15 de octubre). El lanzamiento es el 4 de noviembre y Blizzard sigue ajustando raciales, talentos y valores. Las estructuras y las combinaciones son sólidas; los números pueden moverse. Enlaces a las fuentes, al pie.</p>
+            </details>
+          </div>
+
+          <aside class="guide-aside" data-reveal>
+            <p class="guide-aside__kicker">La regla de oro</p>
+            <blockquote>
+              “Elige el rol que te gusta jugar un martes a las once de la noche, no el que queda bien en una tier list.”
+            </blockquote>
+            <p>La clase que aguantas durante 60 niveles y cien mazmorras siempre rinde más que la que abandonas en el nivel 20. Forever está diseñado para que el viaje importe: tómatelo en serio, pero no demasiado.</p>
+            <div class="guide-aside__actions">
+              <a class="btn btn--gold btn--small" href="#oraculo">Que decida el oráculo</a>
+              <a class="btn btn--ghost btn--small" href="#clases">Volver a las clases</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--facts" id="datos">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__lead">
+            <p class="eyebrow"><span class="eyebrow__num">06</span> Lo que cambia</p>
+            <h2 class="section-title">Forever no es Classic<br><em>con otro nombre.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>
+              Nivel 60 permanente, un hito de talento nuevo en cada rama y reglas
+              pensadas para que el mundo vuelva a importar. Esto es lo que más
+              afecta a tu elección de clase.
+            </p>
+          </div>
+        </header>
+
+        <div class="facts-grid">
+          <article class="fact-card fact-card--wide" data-reveal>
+            <span class="fact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></span>
+            <div>
+              <p class="fact-card__kicker">La promesa</p>
+              <h3>Nivel 60 para siempre.</h3>
+              <p>Forever es una expansión horizontal: no hay subida de nivel que invalide tu equipo ni una carrera infinita de equipo. El fin de juego crece con mazmorras y raids nuevas, pero tu personaje no se queda atrás por no jugar una temporada. Eso cambia la pregunta: ya no es “¿qué clase es la mejor ahora?”, sino “¿qué clase quiero ser durante años?”.</p>
+            </div>
+            <span class="fact-card__watermark">60</span>
+          </article>
+
+          <article class="fact-card" data-reveal>
+            <span class="fact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg></span>
+            <p class="fact-card__kicker">Combinaciones</p>
+            <h3>6 + Skyborne</h3>
+            <p>Humano Cazador, Enano Chamán, Gnomo Sacerdote, Orco Mago, No-muerto Paladín y Troll Brujo. Skyborne añade cinco clases por facción. Paladín y Chamán dejan de estar atados a una sola bandera.</p>
+          </article>
+
+          <article class="fact-card" data-reveal>
+            <span class="fact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-swords"></use></svg></span>
+            <p class="fact-card__kicker">Estadísticas</p>
+            <h3>Un golpe, un crítico</h3>
+            <p>Golpe y crítico se unifican para melé, ranged y hechizos. Los híbridos (Reprensión, Mejora) dejan de necesitar dos juegos de stats para ser viables. Los DoTs ahora pueden críticar y etiquetan al objetivo al instante.</p>
+          </article>
+
+          <article class="fact-card" data-reveal>
+            <span class="fact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+            <p class="fact-card__kicker">Diseño</p>
+            <h3>Buffs sin talentos</h3>
+            <p>Divine Spirit, Blessing of Kings, Improved Mark of the Wild e Improved Battle Shout vienen de serie. Ya no tienes que gastar puntos para ser el repartidor de buffs del grupo; esos puntos van a tu rol.</p>
+          </article>
+
+          <article class="fact-card" data-reveal>
+            <span class="fact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg></span>
+            <p class="fact-card__kicker">Talentos</p>
+            <h3>El hito de 16 puntos</h3>
+            <p>Cada rama mantiene los hitos de 11, 21 y 31 puntos, y añade uno nuevo a 16. Llega mientras levelas (nivel 25), así que las builds se sienten completas antes del 60. 51 puntos, 27 ramas.</p>
+          </article>
+
+          <article class="fact-card" data-reveal>
+            <span class="fact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-horde"></use></svg></span>
+            <p class="fact-card__kicker">Reglas de raid</p>
+            <h3>Sin buffs de mundo dentro</h3>
+            <p>Los buffs externos de mundo se suprimen al entrar en una raid. Nada de loggear el personaje con diez buffs y guardarlo para el jueves: importan la ejecución, la composición y el equipo. Los buffs de clase, los frascos y la comida siguen funcionando.</p>
+          </article>
+
+          <article class="fact-card" data-reveal>
+            <span class="fact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-arcane"></use></svg></span>
+            <p class="fact-card__kicker">Skyborne</p>
+            <h3>Dos facciones, dos caminos</h3>
+            <p>La nueva raza elige Alianza u Horda. Alta Orden (Alianza) puede ser Mago; Windshaper (Horda) puede ser Chamán. Comparten Guerrero, Cazador, Pícaro y Druida, y tienen formas de druida propias.</p>
+          </article>
+
+          <article class="fact-card" data-reveal>
+            <span class="fact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg></span>
+            <p class="fact-card__kicker">Lanzamiento</p>
+            <h3>4 de noviembre</h3>
+            <p>La beta termina y Forever abre el 4 de noviembre de 2026. Las raids llegan el 9 de diciembre. El nivel máximo sigue en 60 y los conjuntos de reglas incluyen Normal, PvP y Rol; Hardcore llegará después.</p>
+          </article>
+        </div>
+
+        <div class="closing" data-reveal>
+          <p class="closing__kicker">Ya casi está</p>
+          <h3>No hay clase equivocada.<br><em>Solo hay clases que no son para ti.</em></h3>
+          <p>Todas las clases de Forever pueden aportar algo. La diferencia está en lo que disfrutas haciendo durante horas: aguantar, curar, reventar o cambiar según lo que pida el grupo.</p>
+          <div class="closing__actions">
+            <a class="btn btn--gold" href="#oraculo">Tirar el destino <svg class="icon" aria-hidden="true"><use href="#i-dice"></use></svg></a>
+            <a class="btn btn--ghost" href="#clases">Comparar clases <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="#top" aria-label="Volver al inicio">
+            <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M16 2.5l11.5 6.7v13.6L16 29.5 4.5 22.8V9.2L16 2.5z"/>
+              <path d="M16 8l6.3 3.7v8.6L16 24l-6.3-3.7v-8.6L16 8z"/>
+              <path d="M16 12.2v7.6M12.2 16h7.6"/>
+            </svg>
+            <span class="brand__text"><span class="brand__top">Azeroth</span><span class="brand__bottom">Forever</span></span>
+          </a>
+          <p>Una guía fan, hecha para decidir con criterio y perder el miedo a probar. Sin tier lists disfrazadas de verdad absoluta.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Enlaces del pie">
+          <div>
+            <h4>Explorar</h4>
+            <a href="#clases">Las 9 clases</a>
+            <a href="#razas">Las 9 razas</a>
+            <a href="#matriz">Matriz completa</a>
+            <a href="#oraculo">El oráculo</a>
+          </div>
+          <div>
+            <h4>Guías</h4>
+            <a href="#guia">Elegir por rol</a>
+            <a href="#datos">Cambios de Forever</a>
+            <a href="#guia">Preguntas frecuentes</a>
+          </div>
+          <div>
+            <h4>Fuentes</h4>
+            <a href="https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever" target="_blank" rel="noopener noreferrer">Blizzard · Forever <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg></a>
+            <a href="https://news.blizzard.com/en-us/article/24303313/world-of-warcraft-forever-deep-dive-panel-recap" target="_blank" rel="noopener noreferrer">Deep Dive Panel <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg></a>
+            <a href="https://news.blizzard.com/en-us/article/24304075/create-the-hero-you-want-to-be-in-world-of-warcraft-forever" target="_blank" rel="noopener noreferrer">Razas y clases <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg></a>
+            <a href="https://www.wowhead.com/forever/guide/new-race-class-combinations" target="_blank" rel="noopener noreferrer">Wowhead · combos <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg></a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>Proyecto fan no oficial. World of Warcraft, Warcraft y Blizzard Entertainment son marcas registradas de Blizzard Entertainment, Inc. Este sitio no está afiliado ni respaldado por Blizzard.</p>
+        <p class="footer__meta">Revisado el 22 · 10 · 2026 · beta <span>1.60.1.70425</span> · lanzamiento 4 · 11 · 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="class-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__panel" id="modal-panel" role="document">
+      <button class="modal__close" type="button" data-modal-close aria-label="Cerrar ficha">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+      <div class="modal__content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="noscript">
+      <strong>Necesitas JavaScript para ver las fichas, la matriz y el oráculo.</strong>
+      <p>Todo el contenido está en los archivos del proyecto, pero esta web lo renderiza en el navegador. Activa JavaScript y recarga.</p>
+    </div>
+  </noscript>
+
+  <script src="data-core.js"></script>
+  <script src="data-classes-1.js"></script>
+  <script src="data-classes-2.js"></script>
+  <script src="data-races.js"></script>
+  <script src="icons.js"></script>
+  <script src="app.js"></script>
+  <script src="app-races.js"></script>
+  <script src="app-oracle.js"></script>
+</body>
+</html>
